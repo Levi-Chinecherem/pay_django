@@ -1,0 +1,20 @@
+<!-- templates/create_wallet.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Create Wallet{% endblock %}
+
+{% block content %}
+    <div class="card mx-auto mt-4" style="max-width: 400px;">
+        <div class="card-header">
+            <h5 class="card-title text-center">🌟 Create Wallet 🌟</h5>
+        </div>
+        <div class="card-body">
+            <form method="post" action="">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary btn-block">💳 Create Wallet 💳</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

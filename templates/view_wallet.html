@@ -1,0 +1,23 @@
+<!-- templates/view_wallet.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Your Wallet{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Your Wallet</h2>
+                        <p class="card-text">User: {{ user_wallet.user }}</p>
+                        <p class="card-text">Currency: {{ user_wallet.currency }}</p>
+                        <p class="card-text">Balance: {{ user_wallet.balance }}</p>
+                        <p class="card-text">Created At: {{ user_wallet.created_at }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
